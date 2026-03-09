@@ -1,6 +1,6 @@
-{% set version = "13.1.80" %}
+{% set version = "13.2.51" %}
 {% set arm_variant_type = arm_variant_type | default("sbsa") %}
-{% set cuda_version = "13.1" %}
+{% set cuda_version = "13.2.0" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-sbsa" %}  # [linux and aarch64]
 {% set platform = "windows-x86_64" %}  # [win]
@@ -9,9 +9,9 @@
 
 {% set soname = version.split(".")[0] %}
 
-{% set sha256 = "e3f427f96492956527614c1283760463f7c02319d3e44c4b062fca17429d5951" %}  # [linux64]
+{% set sha256 = "76cbbcc4458b6175878c3a1168521ca9ce36263e7e450ff8a1d1988e5b0bf792" %}  # [linux64]
 {% set sha256 = "94704a1cc2609d471ac1c157e43cc9d89cc437de3b85ec3b2df45199cf66d1f9" %}  # [linux and aarch64]
-{% set sha256 = "9215c7ed572ed74c6167589c32f135a65853cbc35e7d417ec29ddd886be85d43" %}  # [win]
+{% set sha256 = "30321f82df0213ee6d0e1d81d66a13f811d45b80fdc11908526203f16db982cc" %}  # [win]
 
 package:
   name: cuda-tileiras-split
@@ -22,7 +22,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   skip: true  # [osx or ppc64le]
 
 requirements:
