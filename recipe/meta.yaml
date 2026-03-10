@@ -1,6 +1,6 @@
 {% set version = "13.2.51" %}
 {% set arm_variant_type = arm_variant_type | default("sbsa") %}
-{% set cuda_version = "13.2.0" %}
+{% set cuda_version = "13.2" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-sbsa" %}  # [linux and aarch64]
 {% set platform = "windows-x86_64" %}  # [win]
