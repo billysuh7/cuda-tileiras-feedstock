@@ -9,9 +9,9 @@
 
 {% set soname = version.split(".")[0] %}
 
-{% set sha256 = "59dc5682a5bb2ad0068d1661810910c43d6bff37eca1cd7b27eee86423a58195" %}  # [linux64]
-{% set sha256 = "fac4994a68826c0fb79174200c6e8797b2a685203348a34bd5d3b4d8183be0bb" %}  # [linux and aarch64]
-{% set sha256 = "a1843d3c52e89a4ad0190209649a336e5fe24e00089377b65c7092a7127fac3f" %}  # [win]
+{% set sha256 = "1b055db199f806c746d53331200ccd8480bfdddd14638ed2911f30ee0cc4447b" %}  # [linux64]
+{% set sha256 = "98d163bd49de3c06fc179e5534fe4d8d5e1ad65800bf8696f79d2aeccafa039e" %}  # [linux and aarch64]
+{% set sha256 = "14cda835eca0121e8f82f60cb03e8584dc8cd584248f9e0827d5a11c0dae6fe8" %}  # [win]
 
 package:
   name: cuda-tileiras-split
